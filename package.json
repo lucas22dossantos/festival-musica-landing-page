@@ -1,0 +1,23 @@
+{
+  "name": "festival-musica",
+  "version": "1.0.0",
+  "description": "Aprendo SASS y NPM",
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GULP"
+  ],
+  "license": "ISC",
+  "author": "Juan de la Torre (curso de Udemy)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.2"
+  }
+}
