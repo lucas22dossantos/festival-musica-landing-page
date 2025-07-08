@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+//==============================
+//mixin para media query
+//==============================
+
+//TELEFONO: 480px
+@mixin telefono {
+  @media (min-width: v.$telefono) {
+    @content;
+  }
+}
+
+//TABLET: 768px
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+//DESKTOP: 1200px
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+//DESKTOPXL: 1400px
+@mixin desktopXL {
+  @media (min-width: v.$desktopXL) {
+    @content;
+  }
+}
+
+@mixin contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+@mixin grid($columnas) {
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  gap: 5rem;
+}
