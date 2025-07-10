@@ -1,7 +1,7 @@
 @use "sass:color"; //módulo de funciones de color que Sass trae por defecto.
 
-@use "base/variables" as v;
-@use "base/mixins" as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
 .video {
   position: relative;

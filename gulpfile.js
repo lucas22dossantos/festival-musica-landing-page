@@ -7,9 +7,9 @@ const sass = gulpSass(dartSass); //conectamos el motor dartSass con gulpSass
 //con pipe es encadenar tareas
 
 export function css(done) {
-  src("src/scss/app.scss") // Toma el archivo app.scss
+  src("src/scss/app.scss", { sourcemaps: true }) // Toma el archivo app.scss
     .pipe(sass().on("error", sass.logError)) // Lo compila a CSS y agregamos que en el caso de algun error nos avise
-    .pipe(dest("build/css")); // Lo guarda en la carpeta build/css
+    .pipe(dest("build/css", { sourcemaps: "." })); // Lo guarda en la carpeta build/css
 
   done(); // Indica que la tarea terminó
 }

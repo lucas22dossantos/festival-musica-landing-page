@@ -619,3 +619,13 @@ body > section {
 .pase-footer p:hover {
   background: rgb(93.6, 37.6, 120.8);
 }
+
+.footer {
+  background: #f53756;
+  padding: 2rem;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+}/*# sourceMappingURL=app.css.map */
