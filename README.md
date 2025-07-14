@@ -6,6 +6,7 @@ Este proyecto es una **landing page para un festival de música**, creada como p
 
 ## 🚀 Tecnologías usadas
 
+- javaScript
 - HTML5
 - Sass (con estructura modular)
 - CSS compilado desde Sass
