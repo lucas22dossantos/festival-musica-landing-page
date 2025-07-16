@@ -65,7 +65,7 @@ function cerrarModal() {
     eliminarModal?.remove(); //si existe modal entonces eliminalo
 
     const body = document.querySelector("body");
-    body.classList.remove("overflow-hidden ");
+    body.classList.remove("overflow-hidden");
   }, 500); //medio segundos
 }
 
