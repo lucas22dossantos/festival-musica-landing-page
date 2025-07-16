@@ -12,16 +12,9 @@ function crearGaleria() {
   for (let i = 1; i <= cantidadImg; i++) {
     const imagen = document.createElement("PICTURE");
 
-    imagen.innerHTML = imagen.innerHTML = `
-    <source srcset="build/img/gallery/full/${i}.webp" type="image/webp">
-    <img loading="lazy" width="200" height="300" src="build/img/gallery/thumb/${i}.jpg" alt="imagen galeria">
-`;
-
-    // imagen.src = `src/img/gallery/thumb/${i}.jpg`;
-    // imagen.alt = "Imagen Galeria";
-    // imagen.loading = "lazy";
-    // imagen.width = "300";
-    // imagen.height = "200";
+    imagen.innerHTML =
+      imagen.innerHTML = `<source srcset="build/img/gallery/thumb/${i}.webp" type="image/webp">
+    <img loading="lazy" width="200" height="300" src="build/img/gallery/thumb/${i}.jpg" alt="imagen galeria">`;
 
     // Event Hander: esto detecta y responde  a una interaccion de un usuario
 
@@ -38,8 +31,9 @@ function crearGaleria() {
 function mostrarImagen(i) {
   // generamos la imagen
   const imagen = document.createElement("PICTURE");
-  imagen.src = `src/img/gallery/full/${i}.jpg`;
-  imagen.alt = "Imagen Galeria";
+  imagen.innerHTML =
+    imagen.innerHTML = `<source srcset="build/img/gallery/full/${i}.webp" type="image/webp">
+    <img loading="lazy" width="200" height="300" src="build/img/gallery/full/${i}.jpg" alt="imagen galeria">`;
 
   // generar modal
   const modal = document.createElement("DIV");
